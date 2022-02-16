@@ -5,6 +5,12 @@ spring:
     username: postgres
     password: password
 
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+
   liquibase:
     enabled: true
     drop-first: false
@@ -12,4 +18,4 @@ spring:
 
 logging:
   level:
-    liquibase: info
+    liquibase: off
